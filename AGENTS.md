@@ -84,3 +84,7 @@ PR review criteria live in [CLAUDE.md](./CLAUDE.md) (correctness, auth on new ro
 - Print or log personal access tokens. Newly minted PATs may have a `phpat_` prefix; strip happens in `extractToken`.
 - Trust client-supplied org/user IDs — check auth on every new route and tool.
 - Bypass factories (`ConnectorFactory`, `GraphDBProviderFactory`, `VectorDBProviderFactory`, `KeyValueStoreFactory`, `MessagingFactory`) or talk to Qdrant/Arango/Neo4j/etcd clients from feature code.
+
+## SUP3RNOVA maintained fork
+Read [NOVA.md](NOVA.md) before changes. Target `nova/main`, preserve native settings,
+and never interpret an image build as production deployment authorization.
